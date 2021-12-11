@@ -1,1 +1,1 @@
-CRIAR abacaba/guilherme/gustavoweqweqwe
+GUARDAR pinto.txt abacaba/

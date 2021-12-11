@@ -50,6 +50,10 @@ def validate_file(token):
             ok = True
         elif c == '_':
             ok = True
+        # MEXER NISSO AQUI#
+        elif c == '.':
+            ok = True
+        # MEXER NISSO AQUI#
         if (not ok):
             return ok
     
@@ -78,4 +82,5 @@ def create(token1, token2):
         return False
 
 def store(token1, token2):
-    shutil.move(original,target)
+    path = 'E:/Users/guilh/Programacao/Python/trabalho-ecom06'
+    shutil.move(path + '/' + token1 ,path + '/' + token2)
