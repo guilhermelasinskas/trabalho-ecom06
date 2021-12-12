@@ -1,9 +1,9 @@
-from entity_validator import validate_command
-from entity_validator import validate_file
-from entity_validator import validate_folder
-from entity_validator import validate_path
-from util import invalid_command_error_message as command_error
-from util import token_validation_error_message as token_error
+from Analyzers.entity_validator import validate_command
+from Analyzers.entity_validator import validate_file
+from Analyzers.entity_validator import validate_folder
+from Analyzers.entity_validator import validate_path
+from Util.util import invalid_command_error_message as command_error
+from Util.util import token_validation_error_message as token_error
 
 def Analyze(command, token1, token2):
 

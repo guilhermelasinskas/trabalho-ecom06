@@ -1,5 +1,5 @@
 DIRECTORY = '.'
-TARGET_FILE_NAME = 'programa_ex_1.txt'
+TARGET_FILE_NAME = 'Example Programs\programa_ex_1.txt'
 LOG_FILE_NAME = 'execution_log.txt'
 keyword_GUARDAR = 'GUARDAR'
 keyword_CRIAR = 'CRIAR'

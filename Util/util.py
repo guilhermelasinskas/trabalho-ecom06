@@ -1,4 +1,4 @@
-import constants
+import Util.constants as constants
 
 def parse(string_main, stopc):
     token = []

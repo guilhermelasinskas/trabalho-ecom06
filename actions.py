@@ -1,7 +1,7 @@
 import os
-import constants
+import Util.constants as constants
 import shutil
-from entity_validator import validate_path
+from Analyzers.entity_validator import validate_path
 
 def create(token1): # CRIAR
 

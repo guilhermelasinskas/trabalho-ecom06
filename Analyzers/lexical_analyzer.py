@@ -1,4 +1,4 @@
-from util import parse
+from Util.util import parse
 
 def Analyze(line):
     # Comando

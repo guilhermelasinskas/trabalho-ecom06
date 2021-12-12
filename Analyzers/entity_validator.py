@@ -1,4 +1,4 @@
-import constants
+import Util.constants as constants
 
 def validate_command(command):
 

@@ -1,9 +1,9 @@
-from constants import TARGET_FILE_NAME
-from constants import obj_key_inst as inst
-from constants import obj_key_arg_A as arg1
-from constants import obj_key_arg_B as arg2
-import lexical_analyzer
-import syntactic_analyzer
+from Util.constants import TARGET_FILE_NAME
+from Util.constants import obj_key_inst as inst
+from Util.constants import obj_key_arg_A as arg1
+from Util.constants import obj_key_arg_B as arg2
+import Analyzers.lexical_analyzer as lexical_analyzer
+import Analyzers.syntactic_analyzer as syntactic_analyzer
 from actions import create, store
 
 file_name = TARGET_FILE_NAME
