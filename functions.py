@@ -10,29 +10,34 @@ def lexical_analyzer(string_main, stopc):
     token = []
 
     for c in string_main:
-        if (c != stopc):
+        if (c in stopc):
+            break
+        else:
             token.append(c)
             string_main = string_main[1:]
-        else:
-            break
     
-    return token, string_main;
+    return token, string_main
 
 def entity_lexical_analyser(command, token1, token2):
 
-    if(middle_layer.validate_command(command) == 0):
+    if(middle_layer.validate_command(command) == 0): # CRIAR
+        # TODO: log de comando reconhecido
         assert (middle_layer.validate_folder(token1) or middle_layer.validate_path(token1))
 
         if middle_layer.create(token1, token2):
-            print("O arquivo foi criado")
+            print("O caminho ou pasta foi criado")
         else:
-            print("O arquivo não foi criado")
+            print("O caminho ou pasta não foi criado")
 
-    elif(middle_layer.validate_command(command) == 1):
-        print("GUARDAR")
-        assert (middle_layer.validate_file(token1) and middle_layer.validate_folder(token2))
-        middle_layer.store(token1, token2)
+    elif(middle_layer.validate_command(command) == 1): # GUARDAR
+        # TODO: log de comando reconhecido
+        assert (middle_layer.validate_file(token1, True) and middle_layer.validate_folder(token2))
+        
+        if middle_layer.store(token1, token2):
+            print("O arquivo foi guardado")
+        else:
+            print("Não foi possível guardar o arquivo")
 
     else:
-        print("Erro de compilação")
+        print("Erro de compilação: Comando não reconhecido")
         quit()

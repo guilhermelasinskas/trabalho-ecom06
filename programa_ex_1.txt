@@ -1,0 +1,5 @@
+CRIAR primeira_pasta/
+CRIAR primeira_pasta/gatinho.txt
+CRIAR segunda_pasta/
+CRIAR arquivo_criado.txt
+GUARDAR arquivo_criado.txt segunda_pasta/
