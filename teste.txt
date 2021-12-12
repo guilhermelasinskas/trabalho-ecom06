@@ -1,1 +1,0 @@
-GUARDAR pinto.txt abacaba/

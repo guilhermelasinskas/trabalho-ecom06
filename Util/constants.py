@@ -1,0 +1,8 @@
+DIRECTORY = '.'
+TARGET_FILE_NAME = 'Example Programs\programa_ex_1.txt'
+LOG_FILE_NAME = 'execution_log.txt'
+keyword_GUARDAR = 'GUARDAR'
+keyword_CRIAR = 'CRIAR'
+obj_key_inst = 'inst'
+obj_key_arg_A = 'arg1'
+obj_key_arg_B = 'arg2'
