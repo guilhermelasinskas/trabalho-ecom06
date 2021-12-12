@@ -1,2 +1,7 @@
 DIRECTORY = '.'
 TARGET_FILE = 'programa_ex_1.txt'
+keyword_GUARDAR = 'GUARDAR'
+keyword_CRIAR = 'CRIAR'
+obj_key_inst = 'inst'
+obj_key_arg_A = 'arg1'
+obj_key_arg_B = 'arg2'

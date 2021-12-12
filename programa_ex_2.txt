@@ -1,0 +1,4 @@
+CRIAR primeiro_arquivo.txt
+CRIAR segundo_arquivo.txt
+CRIAR pasta/valida/
+GUARDA primeiro_arquivo.txt pasta/valida/

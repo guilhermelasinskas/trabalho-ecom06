@@ -1,9 +1,10 @@
+import constants
 
 def validate_command(command):
 
-    if (command == "CRIAR"):
+    if (command == constants.keyword_CRIAR):
         return 0
-    if (command == "GUARDAR"):
+    if (command == constants.keyword_GUARDAR):
         return 1
 
     return -1
