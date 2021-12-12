@@ -1,31 +1,22 @@
-import functions
 from constants import TARGET_FILE
+import lexical_analyzer
+import syntactic_analyzer
+import util
+from actions import create, store
 
 file_name = TARGET_FILE
 
 with open(file_name) as file_handle:
     for line in file_handle:
-        #ANALISADOR LÉXICO --------------------------------------------------------
         
-        #Comando
-        line = line.lstrip()
-        command, line = functions.lexical_analyzer(line, [' '])
-        command = ''.join(str(i) for i in command)
-
-        #Token 1
-        line = line.lstrip()
-        token1, line = functions.lexical_analyzer(line, [' ', '\n'])
-        token1 = ''.join(str(i) for i in token1)
+        # ANALISADOR LÉXICO
+        command, token1, token2 = lexical_analyzer.Analyze(line)
         
-        #Token 2
-        line = line.lstrip()
-        token2, line = functions.lexical_analyzer(line, ['\n'])
-        token2 = ''.join(str(i) for i in token2)
-        token2 = token2.rstrip()
+        # ANALISADOR SINTÁTICO
 
-        #Teste
-        print("Command: ", command, "Token 1: ", token1, "Token 2: ", token2)
+        action_code = syntactic_analyzer.Analyze(command, token1, token2)
 
-        #ANALISADOR LÉXICO DE ENTIDADES -----------------------------------------
-
-        functions.entity_lexical_analyser(command, token1, token2)
+        if (action_code == 0):
+            create(token1)
+        if (action_code == 1):
+            store(token1, token2)
