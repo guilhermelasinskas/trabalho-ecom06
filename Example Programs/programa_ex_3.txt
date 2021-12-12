@@ -1,0 +1,9 @@
+CRIAR primeira_pasta/
+CRIAR primeira_pasta/gatinho.txt
+CRIAR segunda_pasta/
+CRIAR arquivo_para_mover.txt
+GUARDAR arquivo_para_mover.txt segunda_pasta/
+CRIAR terceira_pasta/
+CRIAR terceira_pasta/conteudo_da_pasta_3.txt
+CRIAR quarta_pasta/com_conteudo.txt
+GUARDAR arquivo_inexistente.txt quarta_pasta/
