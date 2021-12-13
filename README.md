@@ -35,6 +35,7 @@ Contudo, como Caminhos podem terminar em arquivo, a validação de extensão tam
 
 ## Compilação
 
+Existem três arquivos com programas de exemplo na pasta **Example Programs**. O nome do arquivo que será compilado e executado deve ser alterado no arquivo `Util/constants.py`.
 A compilação da linguagem é feita utilizando os analisadores aprendidos na disciplina.
 
 - O analisador léxico lê a entrada e faz o tratamento necessário.
