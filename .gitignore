@@ -1,6 +1,3 @@
-# Log file for this program
-execution_log.txt
-
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
